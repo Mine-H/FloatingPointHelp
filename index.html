@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <div style="position: absolute; left: 0px; top: 50px; width: 1350px;">
+        <div class="mid">
+          <p>8192</p>
+        </div>
+        <div class="mid">
+          <p>4096</p>
+        </div>
+        <div class="mid">
+          <p>2048</p>
+        </div>
+        <div class="mid">
+          <p>1024</p>
+        </div>
+        <div class="mid">
+          <p>512</p>
+        </div>
+        <div class="mid">
+          <p>256</p>
+        </div>
+        <div class="mid">
+          <p>128</p>
+        </div>
+        <div class="mid">
+          <p>64</p>
+        </div>
+        <div class="mid">
+          <p>32</p>
+        </div>
+        <div class="mid">
+          <p>16</p>
+        </div>
+        <div class="mid">
+          <p>8</p>
+        </div>
+        <div class="mid">
+          <p>4</p>
+        </div>
+        <div class="mid">
+          <p>2</p>
+        </div>
+        <div class="mid">
+          <p>1</p>
+        </div>
+        <div class="mid">
+          <p>/2</p>
+        </div>
+        <div class="mid">
+          <p>/4</p>
+        </div>
+        <div class="mid">
+          <p>/8</p>
+        </div>
+        <div class="mid">
+          <p>/16</p>
+        </div>
+        <div class="mid">
+          <p>/32</p>
+        </div>
+        <div class="mid">
+          <p>/64</p>
+        </div>
+        <div class="mid">
+          <p>/128</p>
+        </div>
+        <div class="mid">
+          <p>/256</p>
+        </div>
+        <div class="mid">
+          <p>/512</p>
+        </div>
+        <div class="mid">
+          <p>/1024</p>
+        </div>
+        <div class="mid">
+          <p>/2048</p>
+        </div>
+        <div class="mid">
+          <p>/4096</p>
+        </div>
+        <div class="mid">
+          <p>/8192</p>
+        </div>
+      </div>
+    <div id="middle1" style="position: absolute; left: 0px; top: 0px; transition: left 0.5s; width: 450px;">
+      <div style="position: relative; left: 650px; top: 0px;">
+        <div class="bot">
+          <p>-</p>
+        </div>
+      </div>
+      <div style="position: relative; left: 600px; top:  100px;">
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+      </div>
+    </div>
+    <button onclick="move(50, 'middle1', 'exponent1')" style="position: absolute; left: 20px; top: 200px;">Left</button>
+    <p style="position: absolute; left: 70px; top: 200px;">x-ponent:</p>
+    <p id="exponent1" style="position: absolute; left: 135px; top: 200px;">0</p>
+    <button onclick="move(-50, 'middle1', 'exponent1')" style="position: absolute; left: 170px; top: 200px;">Right</button>
+    <button id="add1" onclick="show('div2', 'add1', 'remove1')" style="position: absolute; right: 20px; top: 200px;">Add</button>
+    <button id="remove1" onclick="hide('div2', 'remove1', 'add1')" style="position: absolute; right: 20px; top: 200px; display: none;">Remove</button>
+    </div>
+    <div id="div2" style="display: none;">
+      <div style="position: absolute; left: 0px; top: 300px; width: 1350px;">
+        <div class="mid">
+          <p>8192</p>
+        </div>
+        <div class="mid">
+          <p>4096</p>
+        </div>
+        <div class="mid">
+          <p>2048</p>
+        </div>
+        <div class="mid">
+          <p>1024</p>
+        </div>
+        <div class="mid">
+          <p>512</p>
+        </div>
+        <div class="mid">
+          <p>256</p>
+        </div>
+        <div class="mid">
+          <p>128</p>
+        </div>
+        <div class="mid">
+          <p>64</p>
+        </div>
+        <div class="mid">
+          <p>32</p>
+        </div>
+        <div class="mid">
+          <p>16</p>
+        </div>
+        <div class="mid">
+          <p>8</p>
+        </div>
+        <div class="mid">
+          <p>4</p>
+        </div>
+        <div class="mid">
+          <p>2</p>
+        </div>
+        <div class="mid">
+          <p>1</p>
+        </div>
+        <div class="mid">
+          <p>/2</p>
+        </div>
+        <div class="mid">
+          <p>/4</p>
+        </div>
+        <div class="mid">
+          <p>/8</p>
+        </div>
+        <div class="mid">
+          <p>/16</p>
+        </div>
+        <div class="mid">
+          <p>/32</p>
+        </div>
+        <div class="mid">
+          <p>/64</p>
+        </div>
+        <div class="mid">
+          <p>/128</p>
+        </div>
+        <div class="mid">
+          <p>/256</p>
+        </div>
+        <div class="mid">
+          <p>/512</p>
+        </div>
+        <div class="mid">
+          <p>/1024</p>
+        </div>
+        <div class="mid">
+          <p>/2048</p>
+        </div>
+        <div class="mid">
+          <p>/4096</p>
+        </div>
+        <div class="mid">
+          <p>/8192</p>
+        </div>
+      </div>
+    <div id="middle2" style="position: absolute; left: 0px; top: 0px; transition: left 0.5s; width: 450px;">
+      <div style="position: relative; left: 650px; top: 250px;">
+        <div class="bot">
+          <p>-</p>
+        </div>
+      </div>
+      <div style="position: relative; left: 600px; top:  350px;">
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+        <div class="bot">
+          <form>
+            <input type="checkbox">
+          </form>
+        </div>
+      </div>
+    </div>
+    <button onclick="move(50, 'middle2', 'exponent2')" style="position: absolute; left: 20px; top: 450px;">Left</button>
+    <p style="position: absolute; left: 70px; top: 450px;">x-ponent:</p>
+    <p id="exponent2" style="position: absolute; left: 135px; top: 450px;">0</p>
+    <button onclick="move(-50, 'middle2', 'exponent2')" style="position: absolute; left: 170px; top: 450px;">Right</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
