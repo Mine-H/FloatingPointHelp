@@ -1,0 +1,27 @@
+.binarysetup {
+	display: grid;
+	grid-template: 1fr 1fr / 50% 50%;
+}
+
+.binarysetup h2:first-child {
+	color: green;
+	justify-self: start;
+}
+
+.binarysetup h2:first-child + h2 {
+	color: blue;
+	justify-self: end;
+}
+
+.setupexp {
+	display: flex;
+	justify-content: flex-end;
+	justify-self: end;
+	border-right: 1px solid black;
+}
+.setupmant {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+	justify-self: start;
+}
