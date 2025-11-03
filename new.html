@@ -5,7 +5,9 @@
 		<meta name="google" content="notranslate">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Floating Point Help</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+		
+		<title>New Floating Point Help</title>
 		<link href="new.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
@@ -14,16 +16,14 @@
 		<div class="bit-setup">
 			<div class="setup-exp">
 				<h2>Exponent</h2>
-				<div>
-					<button onclick="AddSetupBit(this.parentNode)">+</button>
-					<button onclick="RemoveSetupBit(this)">0</button>
+				<p>Bits: <span class="setup-buttons" onclick="RemoveSetupBits('exp')">&minus;</span> <span id="exp-bit-num">1</span> <span class="setup-buttons" onclick="AddSetupBits('exp')">+</span></p>
+				<div id="exp-bits">
 				</div>
 			</div>
 			<div class="setup-mant">
 				<h2>Mantissa</h2>
-				<div>
-					<button onclick="AddSetupBit(this.parentNode)">+</button>
-					<button onclick="RemoveSetupBit(this)">0</button>
+				<p>Bits: <span class="setup-buttons" onclick="RemoveSetupBits('mant')">&minus;</span> <span id="mant-bit-num">1</span> <span class="setup-buttons" onclick="AddSetupBits('mant')">+</span></p>
+				<div id="mant-bits">
 				</div>
 			</div>
 		</div>
