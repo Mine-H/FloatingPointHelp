@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB" xml:lang="en-GB">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="google" content="notranslate">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Floating Point Help</title>
 		<link href="new.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<h1>Floating Point Visualiser</h1>
-		<div class="binarysetup">
-			<h2>Exponent</h2>
-			<h2>Mantissa</h2>
-			<div class="setupexp">
-				<p>+</p>
-				<p>0</p>
+
+		<div class="bit-setup">
+			<div class="setup-exp">
+				<h2>Exponent</h2>
+				<div>
+					<button onclick="AddSetupBit(this.parentNode)">+</button>
+					<button onclick="RemoveSetupBit(this)">0</button>
+				</div>
 			</div>
-			<div class="setupmant">
-				<p>+</p>
-				<p>0</p>
+			<div class="setup-mant">
+				<h2>Mantissa</h2>
+				<div>
+					<button onclick="AddSetupBit(this.parentNode)">+</button>
+					<button onclick="RemoveSetupBit(this)">0</button>
+				</div>
 			</div>
 		</div>
 	</body>
